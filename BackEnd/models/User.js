@@ -1,4 +1,4 @@
-import Roles from "../config/Roles";
+const Roles = require("../config/Roles");
 const mongoose = require('mongoose')
 
 const UserSchema = new mongoose.Schema({

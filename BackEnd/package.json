@@ -13,8 +13,11 @@
   "author": "MinhLC",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.4",
     "bcryptjs": "^2.4.3",
     "config": "^3.3.6",
+    "crypto": "^1.0.1",
+    "dateformat": "^4.5.1",
     "express": "^4.17.1",
     "express-validator": "^6.12.1",
     "gravatar": "^1.8.2",
