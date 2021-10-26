@@ -1,5 +1,5 @@
 {
-  "mongoURI": "mongodb+srv://kuro091:GUyH0XEbvawkVW0e@smitevn.rksjc.mongodb.net/smiteVN?retryWrites=true&w=majority",
+  "mongoURI": "mongodb+srv://kuro091:O90fhflhJPKzz2g9@smitevn.rksjc.mongodb.net/smiteVN?retryWrites=true&w=majority",
   "jwtSecret": "mysecrettoken",
   "devKey": "4047",
   "authKey": "DA0A094DD2B449049459FD2EC1A65E54",

@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const AbilityTranslated = new mongoose.Schema({
+const AbilityTranslatedSchema = new mongoose.Schema({
   _id: {
     type: Number,
     required: true,
@@ -44,9 +44,24 @@ const AbilityTranslated = new mongoose.Schema({
       ],
     },
   },
+  translatedBy: [
+    {
+      user: {
+        type: String,
+        ref: "user",
+      },
+      name: {
+        type: String,
+      },
+      time: {
+        type: Date,
+        default: Date.now,
+      },
+    },
+  ],
 });
 
 module.exports = AbilityTranslated = mongoose.model(
   "abilityTranslated",
-  AbilityTranslated
+  AbilityTranslatedSchema
 );

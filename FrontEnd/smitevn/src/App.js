@@ -1,11 +1,21 @@
-import "./App.css";
-
-import React, { Fragment, useEffect } from "react";
-
+import React, { Fragment } from "react";
+import Routes from "./routes";
 import { Provider } from "react-redux";
 import store from "./store";
+import { Box } from "@mui/material";
+
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+/>;
 const App = () => {
-  return <Provider store={store}></Provider>;
+  return (
+    <Box>
+      <Provider store={store}>
+        <Routes />
+      </Provider>
+    </Box>
+  );
 };
 
 export default App;

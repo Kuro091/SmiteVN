@@ -2,28 +2,32 @@ const mongoose = require("mongoose");
 
 const GodTranslatedSchema = new mongoose.Schema({
   _id: {
+    type: Number,
+    required: true,
+  },
+  name: {
     type: String,
     required: true,
   },
   ability1: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "ability",
+    type: Number,
+    ref: "abilityTranslated",
   },
   ability2: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "ability",
+    type: Number,
+    ref: "abilityTranslated",
   },
   ability3: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "ability",
+    type: Number,
+    ref: "abilityTranslated",
   },
   ability4: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "ability",
+    type: Number,
+    ref: "abilityTranslated",
   },
   ability5: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "ability",
+    type: Number,
+    ref: "abilityTranslated",
   },
   pros: {
     type: String,
@@ -49,6 +53,24 @@ const GodTranslatedSchema = new mongoose.Schema({
   lore: {
     type: String,
   },
+  pantheon: {
+    type: String
+  },
+  translatedBy: [
+    {
+      user: {
+        type: String,
+        ref: "user",
+      },
+      name: {
+        type: String,
+      },
+      time: {
+        type: Date,
+        default: Date.now,
+      },
+    },
+  ],
 });
 
 module.exports = GodTranslated = mongoose.model(

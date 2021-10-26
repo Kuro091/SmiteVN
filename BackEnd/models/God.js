@@ -2,28 +2,31 @@ const mongoose = require("mongoose");
 
 const GodSchema = new mongoose.Schema({
   _id: {
-    type: String,
+    type: Object,
     required: true,
   },
+  name:{
+    type: String
+  },
   ability1: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "ability",
+    type: Number,
+    ref: "Ability",
   },
   ability2: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "ability",
+    type: Number,
+    ref: "Ability",
   },
   ability3: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "ability",
+    type: Number,
+    ref: "Ability",
   },
   ability4: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "ability",
+    type: Number,
+    ref: "Ability",
   },
   ability5: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "ability",
+    type: Number,
+    ref: "Ability",
   },
   pros: {
     type: String,
@@ -49,6 +52,9 @@ const GodSchema = new mongoose.Schema({
   lore: {
     type: String,
   },
+  pantheon: {
+    type: String
+  }
 });
-
-module.exports = God = mongoose.model("god", GodSchema);
+const God = mongoose.model("god", GodSchema);
+module.exports = God;
