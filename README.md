@@ -11,15 +11,15 @@ FrontEnd should run fine though
 
 
 # Front
-![alt text](https://puu.sh/IkQ0i/84633c4eb2.png)
+![alt text](https://i.imgur.com/Ds1zLwY.jpeg)
 
-![alt text](https://puu.sh/IkQ0D/c49a8db7cc.png)
+![alt text](https://i.imgur.com/dhs9zlZ.png)
 
 # Back
 
-![alt text](https://puu.sh/IkQ0O/2cf7d15177.png)
+![alt text](https://i.imgur.com/fRvdLmJ.png)
 
-![alt text](https://puu.sh/IkQ13/452431efe6.png)
+![alt text](https://i.imgur.com/GZiJEka.png)
 
 Do
 
